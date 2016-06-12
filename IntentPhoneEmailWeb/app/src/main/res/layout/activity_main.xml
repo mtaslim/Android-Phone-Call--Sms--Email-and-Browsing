@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ityadi.app.intentphoneemailweb.MainActivity">
+
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ETmobile"
+    android:hint="Enter Mobile Number"
+    android:padding="5pt"
+    android:background="@drawable/border"
+    android:inputType="number"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETemail"
+        android:layout_below="@+id/ETmobile"
+        android:hint="Enter Email"
+        android:padding="5pt"
+        android:background="@drawable/border"
+        android:layout_marginTop="5pt"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETurl"
+        android:layout_below="@+id/ETemail"
+        android:hint="Enter URL"
+        android:padding="5pt"
+        android:background="@drawable/border"
+        android:layout_marginTop="5pt"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSubmit"
+        android:layout_below="@+id/ETurl"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:background="@drawable/button_border"
+        android:layout_marginTop="5pt"
+        android:onClick="submitForm"/>
+</RelativeLayout>
